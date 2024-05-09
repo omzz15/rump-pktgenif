@@ -277,7 +277,7 @@ main(int argc, char *argv[])
 		for (i = 0; i < parallel; i++) {
 			char srcaddr[64];
 			char dstaddr[64];
-			cpu_set_t cpuset;
+			cpuset_t cpuset;
 
 			CPU_ZERO(&cpuset);
 			CPU_SET(i, &cpuset);
